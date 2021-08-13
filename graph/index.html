@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Graph</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+<div class="title">
+    <h3>Coming soon...</h3>
+    <h1>QUANTUM GRAPH EXPLORATION</h1>
+    <h3>Making fun with computing...</h3>
+</div>
+
+
+
+  <css-doodle grid="1x18">
+  :doodle {
+    max-width: 60vw; max-height: 60vw;
+  }
+
+  @place-cell: center;
+  @size: calc(@i()*6%);
+
+  border-radius: 50%;
+  border-style: dashed;
+  border-width: calc(@i() * 2px);
+  border-color: hsla(
+    @rand(150, 180), 100%, 50%,
+    calc(3 / @i() * .8)
+  );
+  
+  @keyframes changeRotate {
+    from {
+      transform: rotate(@r(360deg));
+    }
+
+    to {
+      transform: rotate(@r(0deg));
+    }
+  }
+  
+  animation-duration: calc(2s * @i());
+  animation-name: changeRotate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: calc(0.08s * @i());
+  
+  @at(1, 13) {
+    border-style: dotted;
+    border-color: hsla(
+      190, 70%, 50%, 90%
+    );
+  }
+  
+  @at(1, 17) {
+    border-style: dotted;
+    border-color: hsla(
+      190, 70%, 50%, 90%
+    );
+  }
+</css-doodle>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.6.1/css-doodle.min.js'></script>
+
+  
+
+</body>
+
+</html>
