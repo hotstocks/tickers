@@ -931,7 +931,7 @@ h3 {
 .header-area .main-header-area {
   padding: 25px 132px;
   background: #fff;
-  background: #E1E3F0;
+  background: linear-gradient(to right, darkblue , purple);
 }
 
 @media (max-width: 767px) {
