@@ -1103,7 +1103,7 @@ h3 {
 
 /* line 134, ../../Arafath/CL/CL October/219. SEO/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
-  color: #727272;
+  color: white;
   font-size: 15px;
   text-transform: capitalize;
   font-weight: 400;
@@ -1241,7 +1241,7 @@ h3 {
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.96);
-  background: #fafafa;
+  background: linear-gradient(to right, darkblue , purple);
 }
 
 @media (max-width: 767px) {
